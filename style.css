@@ -48,7 +48,7 @@ body{
     display:flex ;
     justify-content:left;
     /*background: linear-gradient(68.15deg, #011140 16.62%,#189698 85.61%);*/
-    background: linear-gradient(80deg,#01081a,#02182b,#0f6683,#139294);
+    background: linear-gradient(60deg,#021035,#042e52,#0f6683,#0e7e80);
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 50px;
