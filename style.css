@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@88.4,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Oswald:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+body{
+    font-size: 100%;
+    font-family: "Open sans", sans-serif;
+}
+.cabecalho{
+    background: rgba(0, 0, 0, 0.4) url(img/Background-Ads.jpg) center center /  cover no-repeat fixed ;
+    background-blend-mode: darken;
+    max-width: 100%;
+    height: 77vh;
+    display: flex;
+}
+.cabecalho-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end; 
+    padding: 24px 50px;
+    font-family: "Open sans", sans-serif;
+    color: #F2E3D5; 
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 30px;  
+}
+.cabecalho-menu-item{
+    color: #F2E3D5;
+}
+.cabecalho-menu-item:hover{
+    border-bottom:2.5px solid ;
+    border-color: white;
+    border-radius: 4px;  
+}
+.cabecalho-logo{
+    margin: auto;
+    display: flex;
+    position: absolute;
+    max-width: 100% ;
+}
+.conteudo-principal{
+    display:flex ;
+    justify-content:left;
+    /*background: linear-gradient(68.15deg, #011140 16.62%,#189698 85.61%);*/
+    background: linear-gradient(60deg,#021645,#044071,#0f6683,#117d7f);
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap:30px;
+    color:white;
+    align-items: center;
+    background-size: 150% 150%;
+    animation: degrade-animado 15s ease-in-out infinite;
+}
+@keyframes degrade-animado{
+    0%{ 
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.conteudo-imagem{
+    width: 300px;
+    height: 400px;
+    display: flex;    
+}
+.conteudo-principal-escrito a{
+    color:white;
+    padding:15px 50px;
+    background-color: #011042;
+    display:inline-block;
+    margin-top: 10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:10px; 
+}
+.conteudo-principal-escrito-titulo{
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+.conteudo-principal-escrito-texto{
+    padding-top: 15px;
+    font-family: sans-serif;
+}
+.conteudo-principal-escrito a:hover{
+    background-color: #117d7f;
+}
+.rodape{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#034361 ;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.rodape-principal{
+    padding:0;
+    display: flex;
+    flex-direction: column;    
+}
+.rodape-cards{
+    justify-content: center;
+    display:flex;
+    gap:30px;
+    align-items: center;
+    margin: 30px;
+}
+@media screen and (max-width:600px) {
+    .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    }
+}
+.card{
+    border: 2px solid #33CBCB; 
+    width: 300px;
+    padding-left: 10px;
+    flex-direction: column;
+    display: flex;
+    height: 250px;
+}
+.card img{
+    width: 70px;
+    height:70px;
+    padding-top: 15px;
+    padding-bottom: 5px ;
+    
+    height: auto;
+}
+.rodape-principal h3{
+    justify-content: center;
+    margin-bottom: 30px;
+    display: flex;
+    text-transform: uppercase;
+}
+.rodape-principal p{
+    display: flex;
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 15px;
+    font-family: "Oswald" sans-serif;
+    
+}
