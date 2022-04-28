@@ -48,15 +48,15 @@ body{
     display:flex ;
     justify-content:left;
     /*background: linear-gradient(68.15deg, #011140 16.62%,#189698 85.61%);*/
-    background: linear-gradient(60deg,#021645,#044071,#0f6683,#117d7f);
+    background: linear-gradient(80deg,#01081a,#02182b,#0f6683,#139294);
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 50px;
     gap:30px;
     color:white;
     align-items: center;
-    background-size: 150% 150%;
-    animation: degrade-animado 15s ease infinite;
+    background-size: 300% 300%;
+    animation: degrade-animado 15s ease-in-out infinite;
 }
 @keyframes degrade-animado{
     0%{ 
