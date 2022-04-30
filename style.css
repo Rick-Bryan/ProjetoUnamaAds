@@ -20,6 +20,7 @@ body{
     .conteudo-principal-escrito-titulo{
         font-size: 21px;
     }
+    
 }
 .cabecalho{
     background: rgba(0, 0, 0, 0.4) url(img/Background-Ads.jpg) center center /  cover no-repeat fixed ;
@@ -59,7 +60,6 @@ body{
 .conteudo-principal{
     display:flex ;
     justify-content:left;
-    /*background: linear-gradient(68.15deg, #011140 16.62%,#189698 85.61%);*/
     background: linear-gradient(60deg,#021035,#042e52,#0f6683,#0e7e80);
     flex-direction: row;
     padding-top: 50px;
@@ -115,7 +115,7 @@ body{
     justify-content: center;
     width: 100%;
     height: auto;
-    margin: auto;     
+    margin: auto;  
 }
 .rodape-principal{
     padding:0;
@@ -136,7 +136,7 @@ body{
     padding-left: 10px;
     flex-direction: column;
     display: flex;
-    height: 400px;
+    height: 310px;
     padding-right: 10px;    
 }
 .card img{
