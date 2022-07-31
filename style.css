@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@88.4,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Oswald:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    font-family: "Open sans", sans-serif;
+}
+@media screen and (max-width:1200px){
+    .rodape-cards{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }   
+}
+@media screen and (max-width:650px){
+    .conteudo-principal-escrito-titulo{
+        font-size: 21px;
+    }
+    .conteudo-imagem{
+        
+        justify-content: center;
+    }
+    
+}
+.cabecalho{
+    background: rgba(0, 0, 0, 0.4) url(img/adi-goldstein-EUsVwEOsblE-unsplash.jpg) center center /  cover no-repeat  ;
+    background-blend-mode: darken;
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+}
+.cabecalho-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end; 
+    padding: 24px 50px;
+    font-family: "Open sans", sans-serif;
+    color: #F2E3D5;
+    
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 30px;
+    justify-content:space-around;
+    max-width: max-content;
+    background-color: white;
+    height: 50px;
+    border-radius: 0.9em;
+    align-items: center;
+    padding: 20px;  
+}
+.cabecalho-menu-item{
+    color: #011042;
+    display: flex;
+    align-items: center;  
+}
+.cabecalho-menu-item:hover{
+    background-color: #011042;
+    height: 40px;
+    border-color: white;
+    border-radius: 0.9em;
+     color: white;
+}
+.cabecalho-logo{
+    margin: auto;
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+}
+.conteudo{
+    background-color:#2ce7dad7;
+}
+.conteudo-principal{
+    /*background-color:#35c3c8;*/
+    
+    display:flex ;
+    justify-content:flex-start;
+    /*background: linear-gradient(60deg,#021035,#042e52,#0f6683,#0e7e80);*/
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap:30px;
+    color:white;
+    align-items: center;
+    background-size: 300% 300%;
+    animation: degrade-animado 15s ease-in-out infinite;
+    flex-wrap: wrap;
+    margin-left: 7%;
+}
+@keyframes degrade-animado{
+    0%{ 
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.conteudo-imagem{
+    width: 420px;
+    height: 400px;
+    display: flex;
+    border-radius: 1.2em;
+    align-items: center;
+    
+    justify-content: center;    
+}
+.conteudo-principal-escrito{
+    margin-left: 30px;
+}
+.conteudo-principal-escrito a{
+    color:white;
+    padding:15px 50px;
+    background-color: #011042;
+    display:inline-block;
+    margin-top: 10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:10px; 
+    
+}
+.conteudo-principal-escrito-titulo{
+    border-bottom: 2px solid white;
+    display: inline-block;
+    color: #011042;
+}
+.conteudo-principal-escrito-texto{
+    padding-top: 15px;
+    font-family: sans-serif;
+    color: #011042;
+}
+.conteudo-principal-escrito a:hover{
+    background-color: #117d7f;
+}
+.rodape{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*background-color:#034361 ;*/
+    background-color: #f7f7f7;
+    /*color: white;*/
+    
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;  
+}
+.rodape-principal{
+    padding:0;
+    display: flex;
+    flex-direction: column;    
+}
+.rodape-cards{
+    justify-content: center;
+    display:flex;
+    gap:30px;
+    align-items: center;
+    margin: 30px;
+    flex-direction: row;
+}
+.card{
+    border: 2px solid #33CBCB; 
+    width: 300px;
+    padding-left: 10px;
+    flex-direction: column;
+    display: flex;
+    height: 310px;
+    padding-right: 10px;    
+}
+.card img{
+    width: 70px;
+    height:80px;
+    padding-top: 15px;
+    padding-bottom: 5px ;  
+}
+.rodape-principal h3{
+    margin-bottom: 30px;
+    display: flex;
+    text-transform: uppercase;
+    margin: auto;
+}
+.rodape-principal p{
+    display: flex;
+    font-size: 14px;
+    margin:auto;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Oswald" sans-serif;  
+}
